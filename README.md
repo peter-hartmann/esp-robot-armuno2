@@ -1,5 +1,7 @@
 # ESP8266 Nodemcu for armuno 2.0 from microbotlabs
 
+... work in progress!
+
 ```
 -- grabber
 pin,b,e,t,n = 5,22,12,1000000,3
