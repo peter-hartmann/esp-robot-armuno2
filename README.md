@@ -27,3 +27,20 @@ for i=1,n do
 end
 pwm2.stop()
 ```
+
+# DNS resolution test
+```
+sk = net.createConnection(net.TCP, 0)
+sk:dns("www.nodemcu.com", function(conn, ip) print(ip) end)
+sk = nil
+ws:connect('ws://echo.websocket.org')
+```
+
+# Wifi setup
+```
+wifi.sta.disconnect()
+wifi.setmode(wifi.STATIONAP)
+wifi.ap.config({ssid=SetupName,auth=wifi.WPA2_PSK,pwd=SetupPassword})
+enduser_setup.manual(true)
+enduser_setup.start()
+```
