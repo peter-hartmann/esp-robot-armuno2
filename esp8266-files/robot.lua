@@ -8,9 +8,10 @@ function state()
 end
 
 function control(seq)
-  for k,v in string.gmatch(seq, "(%w+)=(-?%w+)") do
+  for k,a,v in string.gmatch(seq, "(%w+)([+=])(-?%w+)") do
     k,v = robot[k],tonumber(v)
     if k and v then
+      if a == '=' then k.cur = 0 end
       k.cur = k.cur + v
       if k.cur > k.max then k.cur = k.max end
       if k.cur < k.min then k.cur = k.min end
@@ -20,5 +21,5 @@ function control(seq)
   print(state())
 end
 
-for k,v in pairs(robot) do pwm2.setup_pin_hz(robot[k].pin,50,200,robot[k].cur) end
+for k,v in pairs(robot) do pwm2.setup_pin_hz(robot[k].pin,50,robot_steps,robot[k].cur) end
 pwm2.start()

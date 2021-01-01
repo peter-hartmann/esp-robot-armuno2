@@ -1,4 +1,4 @@
 SetupName = 'Robot-'..node.chipid()
 SetupPassword = 'password123'
-RRobotId = 'Robot-'..node.chipid()
+RobotId = 'Robot-'..node.chipid()
 WebServer='wss://echo.websocket.org'

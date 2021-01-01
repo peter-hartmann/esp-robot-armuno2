@@ -2,29 +2,30 @@
 -- 6 left-right
 -- 7 forth-back
 -- 8 up-down
+robot_steps=800
 robot={
   gr={
     pin=5,
-    min=12,
-    max=22,
-    cur=12,
+    min=48,
+    max=80,
+    cur=48,
   },
   lr={
     pin=6,
-    min=10,
-    max=20,
-    cur=15,
+    min=20,
+    max=96,
+    cur=60,
   },
   fb={
     pin=7,
-    min=10,
-    max=16,
-    cur=11,
+    min=40,
+    max=76,
+    cur=44,
   },
   ud={
     pin=8,
-    min=13,
-    max=22,
-    cur=15,
+    min=32,
+    max=88,
+    cur=60,
   },
 }

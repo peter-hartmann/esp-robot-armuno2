@@ -1,3 +1,8 @@
+local _,r = node.bootreason()
+if r == 6 then node.startup({command="@_reset1.lua"}) node.restart() end
+
+dofile('params.lua')
+
 dofile('config-example.lua')
 dofile('config.lua')
 
