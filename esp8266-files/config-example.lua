@@ -2,4 +2,5 @@
 SetupName = 'Robot-'..node.chipid()
 SetupPassword = 'password123'
 RobotId = 'Robot-'..node.chipid()
-WebServer='wss://echo.websocket.org'
+WebServer = 'wss://echo.websocket.org'
+AutoOffInSec = 60

@@ -28,7 +28,7 @@ pwm2.start()
 
 standing = 0
 t_ms = 40
-t_stop = 5000 / t_ms
+t_stop = AutoOffInSec * 1000 / t_ms
 gpio.mode(4, gpio.OUTPUT)
 tmr.create():alarm(t_ms, tmr.ALARM_AUTO, function()
   standing = standing + 1

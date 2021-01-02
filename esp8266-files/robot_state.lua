@@ -18,8 +18,8 @@ robot={
   },
   fb={
     pin=7,
-    min=38,
-    max=76,
+    min=30,
+    max=85,
     cur=38,
   },
   ud={
