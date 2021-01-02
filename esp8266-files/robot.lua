@@ -26,11 +26,10 @@ for k,v in pairs(robot) do
   robot[k].trg = robot[k].cur
   pwm2.setup_pin_hz(robot[k].pin,50,robot_steps,robot[k].cur)
 end
-pwm2.start()
 
-standing = 0
 t_ms = 40
 t_stop = AutoOffInSec * 1000 / t_ms
+standing = t_stop
 gpio.mode(4, gpio.OUTPUT)
 tmr.create():alarm(t_ms, tmr.ALARM_AUTO, function()
   standing = standing + 1
