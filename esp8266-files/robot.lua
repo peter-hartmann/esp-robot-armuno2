@@ -3,7 +3,8 @@ dofile('robot_state.lua')
 
 function state()
   local s = ''
-  for k,v in pairs(robot) do s = s..k..'='..v.trg..' ' end
+  for k,v in pairs(robot) do s = s..k..'='..v.cur..' ' end
+  if standing == 0 then s = s..'; moving' end
   return s
 end
 
@@ -15,6 +16,7 @@ function control(seq)
       k.trg = k.trg + v
       if k.trg > k.max then k.trg = k.max end
       if k.trg < k.min then k.trg = k.min end
+      if k.trg ~= k.cur then standing = 0 end
     end
   end
   print(state())
