@@ -13,19 +13,19 @@ robot={
   lr={
     pin=6,
     min=20,
-    max=96,
-    cur=60,
+    max=95,
+    cur=56,
   },
   fb={
     pin=7,
-    min=40,
+    min=38,
     max=76,
-    cur=44,
+    cur=38,
   },
   ud={
     pin=8,
     min=32,
     max=88,
-    cur=60,
+    cur=82,
   },
 }
