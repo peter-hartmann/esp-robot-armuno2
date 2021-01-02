@@ -44,3 +44,40 @@ wifi.ap.config({ssid=SetupName,auth=wifi.WPA2_PSK,pwd=SetupPassword})
 enduser_setup.manual(true)
 enduser_setup.start()
 ```
+
+# Program examples
+
+```
+lr=56 ud=75 fb=30 gr=48
+lr=56 ud=82 fb=38 gr=48
+lr=56 ud=82 fb=38 gr=63
+lr=56 ud=82 fb=38 gr=48
+lr=56 ud=87 fb=47 gr=48
+lr=91 ud=87 fb=47 gr=48
+lr=91 ud=87 fb=47 gr=63
+lr=91 ud=75 fb=63 gr=63
+lr=91 ud=75 fb=63 gr=50
+lr=91 ud=75 fb=63 gr=48
+lr=91 ud=88 fb=63 gr=48
+lr=91 ud=88 fb=53 gr=48
+lr=26 ud=88 fb=53 gr=48
+lr=26 ud=63 fb=53 gr=48
+lr=26 ud=63 fb=53 gr=50
+lr=26 ud=63 fb=53 gr=63
+lr=26 ud=87 fb=47 gr=63
+lr=91 ud=87 fb=47 gr=63
+lr=91 ud=69 fb=68 gr=63
+lr=91 ud=69 fb=68 gr=50
+lr=91 ud=69 fb=68 gr=48
+lr=91 ud=85 fb=57 gr=48
+lr=26 ud=85 fb=55 gr=48
+lr=26 ud=73 fb=50 gr=48
+lr=26 ud=73 fb=50 gr=50
+lr=26 ud=73 fb=50 gr=63
+lr=26 ud=88 fb=44 gr=63
+lr=56 ud=88 fb=38 gr=48
+lr=56 ud=82 fb=38 gr=48
+lr=56 ud=82 fb=38 gr=63
+lr=56 ud=82 fb=38 gr=48
+lr=56 ud=75 fb=30 gr=48
+```
