@@ -2,6 +2,11 @@
 
 ... work in progress!
 
+lua modules
+```
+enduser_setup, file, gpio, http, net, node, pwm, pwm2, tmr, uart, websocket, wifi
+```
+
 ```
 -- grabber
 pin,b,e,t,n = 5,22,12,1000000,3
